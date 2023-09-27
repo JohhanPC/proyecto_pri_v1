@@ -18,13 +18,13 @@ public class OrgInvEntity {
     @Id
     private Integer organization_id;
 
-    @Column(name = "organization_code")
+    @Column(name = "organization_code", nullable = false, length = 30)
     private String organization_code;
 
-    @Column(name = "organization_name")
+    @Column(name = "organization_name", nullable = false, length = 30)
     private String organization_name;
 
-    @Column(name = "organization_status")
+    @Column(name = "organization_status", nullable = false, length = 30)
     private String organization_status;
 
 }

@@ -1,7 +1,6 @@
 package com.portalClientesPrimadera.controller;
 
 import com.portalClientesPrimadera.exception.ResourceNotFoundException;
-import com.portalClientesPrimadera.model.AddressesEntity;
 import com.portalClientesPrimadera.model.TypeOrderEntity;
 import com.portalClientesPrimadera.repository.TypeOrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +12,7 @@ import java.util.List;
 @CrossOrigin(origins =  "http://localhost:3000")
 @RestController
 @RequestMapping("/api/v1")
-public class TypeOrdeController {
+public class TypeOrdersController {
 
     @Autowired
     TypeOrderRepository typeOrderRepository;

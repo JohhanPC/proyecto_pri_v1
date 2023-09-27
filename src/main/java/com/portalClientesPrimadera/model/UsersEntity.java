@@ -24,34 +24,34 @@ public class UsersEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long CP_user_id;
 
-    @Column(name = "CP_username")
+    @Column(name = "CP_username", nullable = false, length = 30)
     private String CP_username;
 
-    @Column(name = "CP_Password")
+    @Column(name = "CP_Password", nullable = false, length = 30)
     private String CP_Password;
 
-    @Column(name = "CP_name")
+    @Column(name = "CP_name", nullable = false, length = 30)
     private String CP_name;
 
-    @Column(name = "CP_email")
+    @Column(name = "CP_email", nullable = false, length = 30)
     private String CP_email;
 
-    @Column(name = "cust_account_id")
+    @Column(name = "cust_account_id", nullable = false, length = 10)
     private Integer cust_account_id;
 
-    @Column(name = "cust_name")
+    @Column(name = "cust_name", nullable = false, length = 30)
     private String cust_name;
 
-    @Column(name = "CP_rol_id")
+    @Column(name = "CP_rol_id", nullable = false, length = 10)
     private Integer CP_rol_id;
 
-    @Column(name = "CP_estatus")
+    @Column(name = "CP_estatus", nullable = false, length = 30)
     private String CP_estatus;
 
-    @Column(name = "CP_cell_phone")
+    @Column(name = "CP_cell_phone", nullable = false, length = 10)
     private Integer CP_cell_phone;
 
-    @Column(name = "party_id")
+    @Column(name = "party_id", nullable = false, length = 10)
     private Integer party_id;
 
 
